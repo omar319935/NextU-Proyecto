@@ -1,19 +1,25 @@
+<!-- Etiqueta que indica al navegador la versión de HTML -->
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Etiqueta Meta para caracteres especiales -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<!-- Titulo de pestaña en navegador -->
 	<title>Educación</title>
 </head>
 <body>
 
 	<header>
+		<!-- Imagen SVG programada para su animacion externamente -->
 		<object>
+			<!-- Logo SVG -->
 			<embed src="imagen/Logo.svg">
 		</object>
 	</header>
 
 	<nav>
+		<!-- Enlaces o Hipervinculos / En lista no numerada con viñetas -->
 		<ul>
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="educacion.html">Educación</a></li> 
@@ -21,11 +27,93 @@
 		</ul>
 	</nav>
 
+	<!-- Sección para mis contenidos Titulo e Información -->
 	<section>
 		<h1>Curriculum Vitae</h1>
-		<h2>Omar G. Pinel Orellana</h2>
+		<h2>Omar Gustavo Pinel Orellana</h2>
+		<h3>
+			Fecha de Nacimiento: <em>05/Sep/1993</em><br>
+			Lugar de Nacimiento: <em>Cortes, San Pedro Sula, Honduras.</em>
+		</h3>
+		<h2>Educación</h2>
+		<!-- Tabla para datos de educación -->
+		<table border="1" name="Mi Cursos">
+			<!-- Titulos de la tabla -->
+			<tr>
+				<th>Año</th>
+				<th>Institución</th>
+				<th>Lugar</th>
+				<th>¿Culminó?</th>
+			</tr>
+			<tr>
+				<td>2012</td>
+				<td>Instituto Felipe Zelaya - IFZ</td>
+				<td>San Pedro Sula</td>
+				<td>Si</td>
+			</tr>
+			<tr>
+				<td>2013</td>
+				<td>Universidad Nacional Autonoma de Honduras - UNAH-VS</td>
+				<td>San Pedro Sula</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>2015</td>
+				<td>Instituto de Formación Profesinal - INFOP</td>
+				<td>San Pedro Sula</td>
+				<td>Si</td>
+			</tr>
+			<tr>
+				<td>2017</td>
+				<td>Next University</td>
+				<td>Florida</td>
+				<td>No</td>
+			</tr>
+		</table><br>
+
+		<!-- Formulario para ingresar información -->
+		<form action="" name="Agregar Estudios">
+			<fieldset>
+				<!-- Titulo del formulario -->
+				<legend><h3>Agregar Estudios</h3></legend>
+				<label for="Año"><strong>Año: </strong></label>
+				<!-- Lista desplegable del formulario -->
+				<select name="Año">
+					<option value="1">2009</option>
+					<option value="1">2010</option>
+					<option value="1">2011</option>
+					<option value="1">2012</option>
+					<option value="1">2013</option>
+					<option value="1">2014</option>
+					<option value="1">2015</option>
+					<option value="1">2016</option>
+					<option value="1">2017</option>
+				</select>
+				<p>
+				<!-- Area de texto del formulario -->
+				<label for="Institución"><strong>Institución: </strong></label>
+				<input type="text" name="Institución" placeholder="Ej: Universidad" autofocus required>
+				</p>
+				<p>
+				<label for="Lugar"><strong>Lugar: </strong></label>
+				<textarea name="Lugar" rows="4" cols="30"></textarea>
+				</p>
+				<!-- Radio boton del formulario -->
+				<p>
+				<label for="¿Culminó?"><strong>¿Culminó? </strong>:</label>
+				<input type="radio" name="¿Culminó?"> Si
+				<input type="radio" name="¿Culminó?"> No
+				</p>
+				<!-- Boton Enviar del formulario -->
+				<p>
+				<input type="submit" value="Enviar">
+				</p>
+			</fieldset>
+		</form>
+
 	</section>
 
+	<!-- Footer // Pie de Página -->
 	<footer>
 		<p><em>@Derechos Reservados</em></p>
 		<ul>
